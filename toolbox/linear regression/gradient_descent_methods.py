@@ -1,7 +1,6 @@
 import numpy as np
 from toolbox.cost_function import compute_cost
 
-
 # Steigung berechnen
 def compute_gradient(X, y, w, b):
     """
