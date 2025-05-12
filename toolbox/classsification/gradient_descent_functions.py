@@ -35,7 +35,7 @@ def compute_gradient_logistic(X, y, w, b):
 
 def gradient_descent(X, y, w_in, b_in, alpha, num_iters):
     """
-    Performs batch gradient descent
+    Performs  batch gradient descent
 
     Args:
       X (ndarray (m,n)   : Data, m examples with n features
