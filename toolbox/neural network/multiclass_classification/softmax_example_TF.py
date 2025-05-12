@@ -16,7 +16,7 @@ preferred_model = Sequential(
     [
         Dense(25, activation='relu'),
         Dense(15, activation='relu'),
-        Dense(4, activation='linear')  # <-- Note
+        Dense(4, activation='linear')
     ]
 )
 preferred_model.compile(
