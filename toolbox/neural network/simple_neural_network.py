@@ -1,5 +1,6 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+
 plt.style.use('./deeplearning.mplstyle')
 import tensorflow as tf
 import logging
@@ -104,4 +105,3 @@ print(f"decisions = \n{yhat}")
 
 # Network function
 netf= lambda x : my_predict(norm_l(x),W1_tmp, b1_tmp, W2_tmp, b2_tmp)
-plt_network(X,Y,netf)

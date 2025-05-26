@@ -9,7 +9,7 @@ from tqdm.notebook import tqdm
 
 
 class MLPClassifier(BaseEstimator):
-    """ Multi-Layer Perceptron for Classifikation
+    """ Multi-Layer Perceptron for Classification
 
         Args:
             num_nodes_per_layer: List with the number of nodes per layer
@@ -18,9 +18,7 @@ class MLPClassifier(BaseEstimator):
                  - example: [10, 5, 2] -> 10 Features, 5 Nodes in 1st Hidden Layer, 2 Output Nodes
 
             lr: initial learning rate (float)
-
             alpha: L2 Regularization strength (float)
-
             batch_size: number of samples to use for one update
                 - set to None for batch gradient descent (all samples)
 
@@ -29,7 +27,7 @@ class MLPClassifier(BaseEstimator):
             weights_init_range: Tuple of two floats.
                 - The interval on which the weights will be randomly initialized
 
-            adaptive_lr_constant: Adpative learning rate constant
+            adaptive_lr_constant: Adaptive learning rate constant
                 - lr_new = lr * exp(-adaptive_lr_constant * step)
                 - disable with 0.0
 
@@ -87,7 +85,7 @@ class MLPClassifier(BaseEstimator):
             self.weights_.append(W)
 
     def forward(self, X: np.ndarray) -> List[np.ndarray]:
-        """ forward pass - calculate all activations
+        """ forward pass - calculate all-activations
             Args:
                 X: Input-Activations [num_samples, num_features]
 
